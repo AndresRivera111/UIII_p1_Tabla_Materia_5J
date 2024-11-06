@@ -3,4 +3,4 @@ from .models import Materia
 # Create your views here.
 def inicio_vista(request):
     lasmaterias = Materia.objects.all()
-    return render(request,'gestionarMateria.html')
+    return render(request,'gestionarMateria.html', {'mismaterias': lasmaterias})
