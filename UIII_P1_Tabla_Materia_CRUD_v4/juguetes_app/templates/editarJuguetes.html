@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block cuerpo %}
+<div class="row">
+<div class="col-md-4 offset-md-4">
+    <!--la tarjeta card -->
+    <div class="card">
+    <!--tarjeta-->
+    <div class="card-body">
+        <form action="/editarJuguetes/" method="POST">
+        {% csrf_token %}
+        <!--formulario-->
+        <div class="from-group">
+            <input type="text"  id="txtid" name="txtid"  class="form-control"  value="{{misjuguetes.id}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+
+        <div class="from-group">
+            <input type="text"  id="txtnombre" name="txtnombre"  class="form-control"  value="{{misjuguetes.nombre}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+
+        <div class="from-group">
+            <input type="text"  id="txtmarca" name="txtmarca"  class="form-control"  value="{{misjuguetes.marca}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+
+        <div class="from-group">
+            <input type="text"  id="txtprecio" name="txtnombre"  class="form-control"  value="{{misjuguetes.nombre}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+
+        <div class="from-group">
+            <input type="text"  id="txtproveedor" name="txtproveedor"  class="form-control"  value="{{misjuguetes.proveedor}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="text"  id="txtclasificacion" name="txtclasificacion"  class="form-control"  value="{{misjuguetes.clasificacion}}"  minlength="6"  maxlength="6"  readonly required/>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <!--fin de la tarjeta card -->
+  </div>
+  <!--columna-->
+</div>
+<!--la fila-->
+{% endblock %}

@@ -1,20 +1,24 @@
 from django.shortcuts import render, redirect
-from .models import Materia
+from .models import Juguetes
+
 # Create your views here.
-def inicio_vista(request):
-    lasmaterias = Materia.objects.all()
-    return render(request,'gestionarMateria.html', {'mismaterias': lasmaterias})
+def inicio_vistaJuguetes (request):
+    lista = Juguetes.objects.all()
+    return render(request, 'gestionarJuguetes.html', {'misjuguetes' : lista})
 
-def registrarMateria(request):
-    codigo=request.POST['txtcodigo']
+def registrarJuguetes(request):
+    id=request.POST['txtid']
     nombre=request.POST['txtnombre']
-    creditos=request.POST['numcreditos']
+    marca=request.POST['txtmarca']
+    precio=request.POST['txtprecio']
+    proveedor=request.POST['txtproveedor']
+    clasificacion=request.POST['txtclasificacion']
 
-    guardarmateria=Materia.objects.create(
-    codigo=codigo, nombre=nombre, creditos=creditos)
+    guardarJuguetes=Juguetes.objects.create(
+    id=id, nombre=nombre, marca=marca)
     return redirect("/")
 
-def seleccionarMateria(request, codigo):
+""" def seleccionarMateria(request, codigo):
     materia = Materia.objects.get(codigo=codigo)
     return render(request,'editarmateria.html', {'mismaterias': materia})
 
@@ -31,4 +35,4 @@ def editarMateria(request):
 def borrarMateria(request, codigo):
     materia = Materia.objects.get(codigo=codigo)
     materia.delete() # borra el registro
-    return redirect("/")
+    return redirect("/") """
