@@ -1,39 +1,26 @@
 {% extends "base.html" %} {% block cuerpo %}
 <div class="row">
-<div class="col-md-4 offset-md-4">
+  <div class="col-md-4 offset-md-4">
     <!--la tarjeta card -->
     <div class="card">
-    <!--tarjeta-->
-    <div class="card-body">
+      <!--tarjeta-->
+      <div class="card-body">
         <form action="/editarMateria/" method="POST">
-        {% csrf_token %}
-        <!--formulario-->
-        <div class="from-group">
-            <input type="text"  id="txtcodigo" name="txtcodigo"  class="form-control"  value="{{mismaterias.codigo}}"  minlength="6"  maxlength="6"  readonly required/>
-        </div>
-
-        <div class="from-group py-3">
-            <input type="text"
-              id="txtnombre"
-              name="txtnombre"
-              class="form-control"
-              value="{{mismaterias.nombre}}"
-              maxlength="100"
-              required
-            />
+          {% csrf_token %}
+          <!--formulario-->
+          <div class="from-group">
+            <input type="text" id="txtcodigo" name="txtcodigo" class="form-control" value="{{mismaterias.codigo}}"
+              minlength="6" maxlength="6" readonly required />
           </div>
 
+          <div class="from-group py-3">
+            h<input type="text" id="txtnombre" name="txtnombre" class="form-control" value="{{mismaterias.nombre}}"
+              maxlength="100" required />
+          </div>
+          
           <div class="from-group py-2">
-            <input
-              type="text"
-              id="numcreditos"
-              name="numcreditos"
-              class="form-control"
-              value="{{mismaterias.creditos}}"
-              min="1"
-              max="9"
-              required
-            />
+            <input type="text" id="numcreditos" name="numcreditos" class="form-control" value="{{mismaterias.creditos}}"
+              min="1" max="9" required />
           </div>
 
           <div class="from-group py-2">

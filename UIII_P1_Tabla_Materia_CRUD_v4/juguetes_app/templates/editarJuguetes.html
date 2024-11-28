@@ -9,26 +9,25 @@
         {% csrf_token %}
         <!--formulario-->
         <div class="from-group">
-            <input type="text"  id="txtid" name="txtid"  class="form-control"  value="{{misjuguetes.id}}"  minlength="6"  maxlength="6"  readonly required/>
-        </div>
-
-        <div class="from-group">
-            <input type="text"  id="txtnombre" name="txtnombre"  class="form-control"  value="{{misjuguetes.nombre}}"  minlength="6"  maxlength="6"  readonly required/>
-        </div>
-
-        <div class="from-group">
-            <input type="text"  id="txtmarca" name="txtmarca"  class="form-control"  value="{{misjuguetes.marca}}"  minlength="6"  maxlength="6"  readonly required/>
-        </div>
-
-        <div class="from-group">
-            <input type="text"  id="txtprecio" name="txtnombre"  class="form-control"  value="{{misjuguetes.nombre}}"  minlength="6"  maxlength="6"  readonly required/>
-        </div>
-
-        <div class="from-group">
-            <input type="text"  id="txtproveedor" name="txtproveedor"  class="form-control"  value="{{misjuguetes.proveedor}}"  minlength="6"  maxlength="6"  readonly required/>
+            <input type="text"  id="txtid" name="txtid"  class="form-control"  value="{{misjuguetes.id}}"  minlength="1"  maxlength="6"  readonly required/>
         </div>
         <div class="from-group">
-            <input type="text"  id="txtclasificacion" name="txtclasificacion"  class="form-control"  value="{{misjuguetes.clasificacion}}"  minlength="6"  maxlength="6"  readonly required/>
+            <input type="text"  id="txtnombre" name="txtnombre"  class="form-control"  value="{{misjuguetes.nombre}}"  minlength="1"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="text"  id="txtmarca" name="txtmarca"  class="form-control"  value="{{misjuguetes.marca}}"  minlength="1"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="text"  id="txtfecha_fabricacion" name="txtfecha_fabricacion"  class="form-control"  value="{{misjuguetes.fecha_fabricacion}}"  minlength="1"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="number"  id="numbprecio" name="numbprecio"  class="form-control"  value="{{misjuguetes.precio}}"  minlength="1"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="text"  id="txtproveedor" name="txtproveedor"  class="form-control"  value="{{misjuguetes.proveedor}}"  minlength="1"  maxlength="6"  readonly required/>
+        </div>
+        <div class="from-group">
+            <input type="text"  id="txtclasificacion" name="txtclasificacion"  class="form-control"  value="{{misjuguetes.clasificacion}}"  minlength="1"  maxlength="6"  readonly required/>
         </div>
         </form>
       </div>

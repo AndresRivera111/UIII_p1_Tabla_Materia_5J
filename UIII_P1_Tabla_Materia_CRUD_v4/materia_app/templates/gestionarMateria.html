@@ -11,39 +11,16 @@
           {% csrf_token %}
           <!--formulario-->
           <div class="from-group">
-            <input
-              type="text"
-              id="txtcodigo"
-              name="txtcodigo"
-              class="form-control"
-              placeholder="Codigo Materia"
-              minlength="6"
-              maxlength="6"
-              required
-            />
+            <input type="text" id="txtcodigo" name="txtcodigo" class="form-control" placeholder="Codigo Materia"
+              minlength="6" maxlength="6" required />
           </div>
           <div class="from-group py-3">
-            <input
-              type="text"
-              id="txtnombre"
-              name="txtnombre"
-              class="form-control"
-              placeholder="Nombre Materia"
-              maxlength="100"
-              required
-            />
+            <input type="text" id="txtnombre" name="txtnombre" class="form-control" placeholder="Nombre Materia"
+              maxlength="100" required />
           </div>
           <div class="from-group py-2">
-            <input
-              type="text"
-              id="numcreditos"
-              name="numcreditos"
-              class="form-control"
-              value="1"
-              min="1"
-              max="9"
-              required
-            />
+            <input type="text" id="numcreditos" name="numcreditos" class="form-control" value="1" min="1" max="9"
+              required />
           </div>
           <div class="from-group py-2">
             <button type="submit" class="btn btn-primary">Guardar</button>
