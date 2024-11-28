@@ -10,26 +10,26 @@
         <form action="/registrarJuguetes/" method="POST">
           {% csrf_token %}
           <!--formulario-->
-          <div class="from-group">
+          <div class="from-group py-3">
             <input type="text"  id="txtid"  name="txtid" class="form-control"  placeholder="Id Juguetes" minlength="1"  maxlength="6"  required/>
           </div>
-          <div class="from-group">
-            <input type="text"  id="txtnombre"  name="txtnombre" class="form-control"  placeholder="Nombre" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="text"  id="txtnombre"  name="txtnombre" class="form-control"  placeholder="Nombre" minlength="1"  maxlength="40"  required/>
           </div>
-          <div class="from-group">
-            <input type="text"  id="txtmarca"  name="txtmarca" class="form-control"  placeholder="Marca" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="text"  id="txtmarca"  name="txtmarca" class="form-control"  placeholder="Marca" minlength="1"  maxlength="40"  required/>
           </div>
-          <div class="from-group">
-            <input type="date"  id="txtfecha_fabricacion"  name="txtfecha_fabricacion" class="form-control"  placeholder="Fecha de fabricacion" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="date"  id="txtfecha_fabricacion"  name="txtfecha_fabricacion" class="form-control"  placeholder="Fecha de fabricacion"  required/>
           </div>
-          <div class="from-group">
-            <input type="number"  id="numbprecio"  name="numbprecio" class="form-control"  placeholder="Precio" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="number"  id="numbprecio"  name="numbprecio" class="form-control"  placeholder="Precio"  required/>
           </div>
-           <div class="from-group">
-            <input type="text"  id="txtproveedor"  name="txtproveedor" class="form-control"  placeholder="Proveedor" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="text"  id="txtproveedor"  name="txtproveedor" class="form-control"  placeholder="Proveedor" minlength="1"  maxlength="50"  required/>
           </div>
-          <div class="from-group">
-            <input type="text"  id="txtclasificacion"  name="txtclasificacion" class="form-control"  placeholder="Clasificacion" minlength="1"  maxlength="6"  required/>
+          <div class="from-group py-2">
+            <input type="text"  id="txtclasificacion"  name="txtclasificacion" class="form-control"  placeholder="Clasificacion" minlength="1"  maxlength="50"  required/>
           </div>
           <div class="from-group py-2">
             <button type="submit" class="btn btn-primary">Guardar</button>

@@ -9,13 +9,11 @@
           {% csrf_token %}
           <!--formulario-->
           <div class="from-group">
-            <input type="text" id="txtcodigo" name="txtcodigo" class="form-control" value="{{mismaterias.codigo}}"
-              minlength="6" maxlength="6" readonly required />
+            <input type="text" id="txtcodigo" name="txtcodigo" class="form-control" value="{{mismaterias.codigo}}" minlength="6" maxlength="6" readonly required />
           </div>
 
           <div class="from-group py-3">
-            h<input type="text" id="txtnombre" name="txtnombre" class="form-control" value="{{mismaterias.nombre}}"
-              maxlength="100" required />
+            <input type="text" id="txtnombre" name="txtnombre" class="form-control" value="{{mismaterias.nombre}}" maxlength="100" required />
           </div>
           
           <div class="from-group py-2">
